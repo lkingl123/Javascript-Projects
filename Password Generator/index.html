@@ -1,0 +1,21 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+    <section>
+        <h1 >Generate a <font color="#4ADF86">random password </h1>
+        <h2 >Never use an insecure password again</h2>
+
+        <input id="password-length" type="number" min="8" max="21">
+        <label for="password-length"><font size="4px">Password length </label>
+        <button onclick="passwordGenerate()">Generate password</button>
+        <p>Copy Here...</p>
+            <div class="output">
+                <input id="output-1" type="text" onclick="copyToClipboardOne()" placeholder="...">
+                <input id="output-2" type="text" onclick="copyToClipboardTwo()" placeholder="...">
+            </div>    
+        
+            <script src="index.js"></script>    
+    </body>
+</html>
